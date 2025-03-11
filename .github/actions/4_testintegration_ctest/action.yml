@@ -1,4 +1,4 @@
-name: "Run ctest
+name: "Run ctest"
 description: "Executes ctest."
 
 inputs:
