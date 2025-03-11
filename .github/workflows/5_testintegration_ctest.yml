@@ -1,16 +1,7 @@
 name: Run Tests
 
 on:
-#  pull_request:
-#      types:
-#        - opened
-#        - synchronize
-#        - reopened
-        
-  workflow_run:
-      workflows: ["Compile"]
-      types:
-        - completed
+  workflow_dispatch:
 
 jobs:
   ctest:
@@ -31,4 +22,4 @@ jobs:
         uses: ./.github/actions/4_testintegration_ctest
         with:
           path: build-${{ matrix.os }}/
-        
+
