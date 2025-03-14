@@ -1,5 +1,5 @@
 run-name: Package - Upload Docker package building images
-name: Package - Upload Docker package building images
+name: Package - Upload Docker package building imagess
 
 on:
   pull_request:
