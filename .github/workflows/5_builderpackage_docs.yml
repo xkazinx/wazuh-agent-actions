@@ -24,7 +24,8 @@ jobs:
           use-mermaid: true
       #- run: ${{ github.workspace }}/docs/build.sh
       - run: echo "test"
-      - run: cd ../docs
+      - run: cd ./../
+      - run: cd ./docs
       - run: ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
