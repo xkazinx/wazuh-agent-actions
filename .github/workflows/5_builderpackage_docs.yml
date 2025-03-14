@@ -24,9 +24,7 @@ jobs:
           use-mermaid: true
       #- run: ${{ github.workspace }}/docs/build.sh
       - run: |
-          echo "test" 
           cd ./docs
-          ls
           mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
