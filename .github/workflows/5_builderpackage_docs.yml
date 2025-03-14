@@ -22,7 +22,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           use-mermaid: true
-      - run: ${{ github.workspace }}/docs/build.sh
+      - run: cd ${{ github.workspace }}/docs && build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
