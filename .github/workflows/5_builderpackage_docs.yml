@@ -25,7 +25,6 @@ jobs:
       #- run: ${{ github.workspace }}/docs/build.sh
       - run: |
           echo "test" 
-          cd ./../
           cd ./docs
           ls
           mdbook build
