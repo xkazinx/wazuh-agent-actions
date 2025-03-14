@@ -23,11 +23,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           use-mermaid: true
       #- run: ${{ github.workspace }}/docs/build.sh
-      - run: echo "test"
-      - run: cd ./../
-      - run: cd ./docs
-      - run: ls
-      - run: mdbook build
+      - run: |
+          echo "test" 
+          cd ./../
+          cd ./docs
+          ls
+          mdbook build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
