@@ -25,8 +25,8 @@ jobs:
       #- run: ${{ github.workspace }}/docs/build.sh
       - run: echo "test"
       - run: cd ./../
+      - run: cd ./docs
       - run: mdbook build
-      - run: ./build.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
